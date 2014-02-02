@@ -34,8 +34,8 @@ char * error_message(void)
 
 #else
 
-extern int sys_nerr;
-extern char * sys_errlist [];
+extern const int sys_nerr;
+extern const char *const sys_errlist [];
 
 char * error_message(void)
 {

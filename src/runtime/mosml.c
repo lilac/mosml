@@ -973,8 +973,8 @@ value sml_access(value path, value permarg)          /* ML */
 
 #ifndef HAS_STRERROR
 #if (!defined(__FreeBSD__) && !defined(linux))
-  extern int sys_nerr;
-  extern char * sys_errlist [];
+  extern const int sys_nerr;
+  extern const char *const sys_errlist [];
 #endif   
   extern char *realpath();
 #endif
