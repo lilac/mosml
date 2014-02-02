@@ -3,13 +3,13 @@
 # The runtime system must be compiled with support for dynamic libraries.
 # The GNU GMP multiprecision package must be installed.
 
+include ../../Makefile.inc
+
 # Where to find GMP header file and compiled library
 
 #GMPDIR=${HOME}/c/gmp-2.0.2
-GMPINCDIR=/usr/local/include
-GMPLIBDIR=/usr/local/lib
-
-include ../../Makefile.inc
+GMPINCDIR=$(GMPPREFIX)/include
+GMPLIBDIR=$(GMPPREFIX)/lib
 
 OPTS=-fno-defer-pop
 ROOTDIR:=../..

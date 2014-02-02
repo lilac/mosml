@@ -2,6 +2,7 @@
 
 # Where to install stuff
 PREFIX=/usr/local
+GMPPREFIX=/opt/local
 
 # BINDIR contains true executable files, such as scripts
 # LIBDIR contains bytecode files (such as mosmlcmp and library units), and .dll/.so for dynlibs. 
